@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>AngularJS || Expression Demo 2 </title>
+    <script src="js/angular.min.js"></script>
+</head>
+
+<body>
+    
+    <div ng-app="" ng-init="myCol='lightblue';quantity=2;cost=5">
+        <h3>Example 1:</h3>
+        <input style="background-color:{{myCol}}" ng-model="myCol" value="{{myCol}}">
+
+        <br />
+        <h3>Example 2:</h3>
+        Quantity: <input type="number" ng-model="quantity">
+        Costs:    <input type="number" ng-model="cost">
+        <p>Total in dollar (with expression): {{ quantity * cost }}</p> 
+        <p>Total in dollar (with ng-bind): <span ng-bind="quantity * cost"></span></p>
+
+    </div>
+
+</body>
+</html>
